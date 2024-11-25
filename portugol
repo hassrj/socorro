@@ -2,8 +2,8 @@
  Caracter: de, para, unidade; 
  Real: valor, resultado;
      
-     Função
- converterTemperatura(valor:           real, de: cadeia, para: cadeia):               real
+ Função
+    converterTemperatura(valor: real, de: caracter, para: caracter):real
          escolha: (de + "-" + para)
              caso "cel-fah": retorne (valor * 9 / 5) + 32;
              caso "cel-kel": retorne valor + 273.15;
@@ -13,8 +13,8 @@
              caso "kel-fah": retorne (valor - 273.15) * 9 / 5 + 32;
              caso "cel-cel", "fah-fah", "kel-kel": retorne valor;
              Senão: retorne -1;
- fimescolha;
-     fimfunção;
+         fimescolha;
+fimfunção;
  
      Escrever:("Conversor de Temperaturas");
      Escrever:("Digite a temperatura a ser convertida: ");
