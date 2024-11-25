@@ -1,0 +1,40 @@
+1. Início 
+2. Caracter: de, para, unidade; 
+3. Real: valor, resultado;
+4.     
+5.     Função
+6. converterTemperatura(valor:           real, de: cadeia, para: cadeia):               real
+7.         escolha: (de + "-" + para)
+8.             caso "cel-fah": retorne (valor * 9 / 5) + 32;
+9.             caso "cel-kel": retorne valor + 273.15;
+10.             caso "fah-cel": retorne (valor - 32) * 5 / 9;
+11.             caso "fah-kel": retorne (valor - 32) * 5 / 9 + 273.15;
+12.             caso "kel-cel": retorne valor - 273.15;
+13.             caso "kel-fah": retorne (valor - 273.15) * 9 / 5 + 32;
+14.             caso "cel-cel", "fah-fah", "kel-kel": retorne valor;
+15.             Senão: retorne -1;
+16. fimescolha;
+17.     fimfunção;
+18. 
+19.     Escrever:("Conversor de Temperaturas");
+20.     Escrever:("Digite a temperatura a ser convertida: ");
+21.     Ler(valor);
+22.     Escrever: ("Digite a unidade de origem (cel, fah, kel): ");
+23.     Ler(de);
+24.     Escrever:("Digite a unidade de destino (cel, fah, kel): ");
+25.     Ler:(para);
+26. 
+27.  converterTemperatura(valor, de, para);
+28. 
+29.     Se (resultado == -1) então 
+30.         escreva("Erro: Unidade inválida! Use "cel","fah" ou "kel"");
+31.     Senão
+32.         Escolha: (para);
+33.             caso "cel": unidade <- "°C";
+34.             caso "fah": unidade <- "°F";
+35.             caso "kel": unidade <- "K";
+36.         Fimescolha;
+37.         Escrever: ("Resultado: ", resultado, unidade.);
+38.     Fimse;
+39. Fim.
+40.
